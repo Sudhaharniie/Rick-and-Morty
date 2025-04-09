@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
-import Card from '../src/components/Card'
 import logo from "./assets/logo.png"
-
+import Card from './components/Card'
 
 function App() {
 
