@@ -1,6 +1,16 @@
+import { Link } from "react-router"
+import logo from "../assets/logo.png"
+
+
 function Card({ character }) {
     return (
         <>
+
+
+
+            {
+                character && (
+
                     <div className=" p-8 rounded-3xl shadow-md flex flex-row gap-7 bg-[#c0ccd3]">
                         <img src={character.image} alt={character.name} className="rounded-xl shadow-lg shadow-[#3d6055] " />
                         <div className="flex flex-col justify-around flex-1">
@@ -15,6 +25,9 @@ function Card({ character }) {
                             <div></div>
                         </div>
                     </div>
+
+                )
+            }
         </>
     )
 }
